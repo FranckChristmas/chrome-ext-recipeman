@@ -1,7 +1,7 @@
 chrome.action.onClicked.addListener((tab) => {
   if (!tab || !tab.url) return;
 
-  fetch("https://hook.us1.make.com/TON-WEBHOOK-ID", {
+  fetch("https://hook.eu2.make.com/quof54rhvpqbyn8q4uk7wpu6back9b80, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ url: tab.url }),
