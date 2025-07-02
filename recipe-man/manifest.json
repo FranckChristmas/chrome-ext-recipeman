@@ -8,7 +8,7 @@
   },
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_title": "Send URL"
+    "default_title": "Click to send URL"
   },
   "background": {
     "service_worker": "background.js"
