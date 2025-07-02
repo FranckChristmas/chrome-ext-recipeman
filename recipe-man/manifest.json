@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "URL to Make",
+  "version": "1.0",
+  "description": "send the current website URL to Make via Webhook",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Send URL"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
