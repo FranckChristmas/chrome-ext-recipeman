@@ -3,6 +3,9 @@
   "name": "URL to Make",
   "version": "1.0",
   "description": "send the current website URL to Make via Webhook",
+  "icons": {
+    "128": "recipeman_icon.png"
+  },
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_title": "Send URL"
