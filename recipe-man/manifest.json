@@ -6,7 +6,7 @@
   "icons": {
     "128": "recipeman_icon.png"
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["tabs", "activeTab"],
   "action": {
     "default_title": "Click to send URL"
   },
