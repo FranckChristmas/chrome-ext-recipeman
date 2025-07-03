@@ -1,11 +1,10 @@
 chrome.action.onClicked.addListener((tab) => {
   if (!tab || !tab.url) return;
 
-  fetch("https://hook.eu2.make.com/74b18l7mrxr7hv8kudcwei7dd8ad7322", {
+  fetch("https://hook.eu2.make.com/quof54rhvpqbyn8q4uk7wpu6back9b80", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-make-api-key": "chrome-extension-api-key-75$",
     },
     body: JSON.stringify({ url: tab.url }),
   })
