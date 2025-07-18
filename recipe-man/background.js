@@ -8,6 +8,22 @@ chrome.action.onClicked.addListener((tab) => {
     },
     body: JSON.stringify({ url: tab.url }),
   })
-    .then(() => console.log("URL envoyée à Make :", tab.url))
-    .catch((err) => console.error("Erreur d'envoi à Make :", err));
+    .then(() => {
+      console.log("URL envoyée à Make :", tab.url);
+      chrome.notifications.create({
+        type: "basic",
+        iconUrl: "icon48.png", // Assure-toi que l’icône existe
+        title: "Recette envoyée",
+        message: "La recette a bien été envoyée à Make !",
+      });
+    })
+    .catch((err) => {
+      console.error("Erreur d'envoi à Make :", err);
+      chrome.notifications.create({
+        type: "basic",
+        iconUrl: "icon48.png",
+        title: "Erreur",
+        message: "L’envoi à Make a échoué.",
+      });
+    });
 });
