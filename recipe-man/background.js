@@ -1,7 +1,19 @@
+// console.log("Background script loaded");
+
+// chrome.action.onClicked.addListener(() => {
+//   console.log("Bouton cliqué");
+//   chrome.notifications.create({
+//     type: "basic",
+//     iconUrl: "icon48.png",
+//     title: "Test",
+//     message: "Ceci est un test",
+//   });
+// });
+
 chrome.action.onClicked.addListener((tab) => {
   if (!tab || !tab.url) return;
 
-  fetch("https://hook.eu2.make.com/quof54rhvpqbyn8q4uk7wpu6back9b80", {
+  fetch("https://hook.eu2.make.com/zbf538sb8k79vfpm88ppfpsr612g4zh8", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -12,7 +24,7 @@ chrome.action.onClicked.addListener((tab) => {
       console.log("URL envoyée à Make :", tab.url);
       chrome.notifications.create({
         type: "basic",
-        iconUrl: "icon48.png", // Assure-toi que l’icône existe
+        iconUrl: "icon48.png",
         title: "Recette envoyée",
         message: "La recette a bien été envoyée à Make !",
       });

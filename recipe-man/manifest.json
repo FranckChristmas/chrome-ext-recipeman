@@ -3,14 +3,14 @@
   "name": "URL to Make",
   "version": "1.0",
   "description": "send the current website URL to Make via Webhook",
-  "icons": {
-    "128": "recipeman_icon.png"
-  },
   "permissions": ["tabs", "activeTab", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "Click to send URL"
   },
-  "background": {
-    "service_worker": "background.js"
+  "icons": {
+    "48": "icon48.png"
   }
 }
