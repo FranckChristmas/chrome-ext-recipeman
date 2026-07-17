@@ -13,7 +13,7 @@
 chrome.action.onClicked.addListener((tab) => {
   if (!tab || !tab.url) return;
 
-  fetch("https://hook.eu2.make.com/zbf538sb8k79vfpm88ppfpsr612g4zh8", {
+  fetch("https://hook.eu2.make.com/quof54rhvpqbyn8q4uk7wpu6back9b80", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
